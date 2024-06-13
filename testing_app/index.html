@@ -1,0 +1,122 @@
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Sample page for automated tests</title>
+      <meta name="Description" content="The web application has been prepared for conducting automated tests on it.">
+      <meta name="viewport" content="width=device-width, initial-scale=0.41, shrink-to-fit=no">
+      <meta content="follow,index" name="robots">
+      <link rel="stylesheet" type="text/css" href="styles.css">
+      <script src="scripts.js"></script>
+   </head>
+
+   <body>
+      <form id="Form">
+         <table id="Table" style="width: 804px; padding: 10px;">
+            <tbody id="tbodyId">
+               <tr>
+                  <td colspan="2">
+                     <h1 style="margin: 0;">Sample page for automated tests</h1>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <div class="dropdown">
+                        <div id="Dropdown" class="dropbtn" style="cursor: default;" onclick="clickDropdownFunction()">Hover over</div>
+                        <div class="dropdown-content" style="cursor: pointer; pointer-events: auto;">
+                           <a id="dropOption1" onclick="clickOption1()">Show text 1</a>
+                           <a id="dropOption2" onclick="clickOption2()">Show text 2</a>
+                           <a id="dropOption3" onclick="clickOption3()">Show text 3</a>
+                        </div>
+                     </div>
+                  </td>
+                  <td>
+                     <h3>Default text</h3>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Single-line textbox:</td>
+                  <td><input type="text" id="TextInput"></td>
+               </tr>
+               <tr>
+                  <td>Multi-line textbox:</td>
+                  <td style="padding: 6px 10px 6px 10px;">
+                     <textarea id="Textarea" name="textareaName" class="textareaClass area1" rows="2" cols="28" style="resize: none; width: 90%; font-size: 14px;"></textarea>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Textbox with hint:</td>
+                  <td><input id="placeholderText" type="text" placeholder="Hint..."></td>
+               </tr>
+               <tr>
+                  <td>Pre-filled textbox:</td>
+                  <td>
+                     <input type="text" value="Example..." id="TextInput2" name="preText2">
+                  </td>
+               </tr>
+               <tr>
+                  <td>Button:</td>
+                  <td>
+                     <button onclick="buttonFunction1()" id="Button" type="button" style="color: red;">Press me!</button>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Read-only textbox:</td>
+                  <td>
+                     <input type="text" id="readOnlyText" value="#ff0000" style="font-size: 19px; color: red; width: 90%;" readonly="">
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <p>Paragraph with text:</p>
+                  </td>
+                  <td>
+                     <p id="pText" style="color: red; font-size: 20px;">#ff0000</p>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Option button 1:<input type="radio" checked="" id="radioButton1" name="radioGroup1" class="radioClass1" style="width: 30px;">
+                  </td>
+                  <td>Option button 2:<input type="radio" id="radioButton2" name="radioGroup1" class="radioClass1" style="width: 30px;">
+                  </td>
+               </tr>
+               <tr>
+                  <td style="width: 150px">
+                     Predefined checkbox:
+                     <input type="checkbox" id="checkBox0" name="checkBoxName0" class="checkBoxClassC" checked="">
+                  </td>
+                  <td style="width: 180px;">
+                     Checkboxes:
+                     <input type="checkbox" id="checkBox1" name="checkBoxName2" class="checkBoxClassB">
+                     <input type="checkbox" id="checkBox2" name="checkBoxName3" class="checkBoxClassB">
+                     <input type="checkbox" id="checkBox3" name="checkBoxName4" class="checkBoxClassB">
+                  </td>
+               </tr>
+               <tr>
+                  <td>Slider:</td>
+                  <td>
+                     <input type="range" min="0" max="100" step="1" id="Slider" name="sliderName" value="0" style="width: 90%;" class="slider" oninput="sliderFunction1()" onclick="sliderFunction1()" onchange="sliderFunction1()" onmousemove="sliderFunction1()">
+                  </td>
+               </tr>
+               <tr>
+                  <td><label id="progressLabel" for="progressBar">Progress bar: (0%)</label></td>
+                  <td><progress id="progressBar" value="0" style="width: 90%;" max="100"></progress></td>
+               </tr>
+               <tr>
+                  <td>Select list:</td>
+                  <td>
+                     <select id="Select" name="selectName" class="selectClass" onchange="selectFunction1()" style="width: 90%; font-size: 14px;">
+                        <option value="1%">Set to 1%</option>
+                        <option value="50%">Set to 50%</option>
+                        <option value="100%">Set to 100%</option>
+                     </select>
+                  </td>
+               </tr>
+               <tr>
+                  <td><label id="meterLabel" for="meterBar">Percentage indicator: (1%)</label></td>
+                  <td><meter id="meterBar" value="0.01" style="width: 90%;"></meter></td>
+               </tr>
+            </tbody>
+         </table>
+      </form>
+   </body>
+</html>
